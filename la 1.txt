@@ -1,0 +1,198 @@
+# A Program to read a name and print Hello <name>
+name = input("Please Enter Your Name Here:\n")
+print("Hello " + name)
+
+OUTPUT:
+1) 
+Please Enter Your Name Here: 
+ALS 
+Result: 
+Hello ALS will be displayed 
+
+
+
+# A Program to read two numbers and display sum, difference, product and division
+print("Enter First Number")
+ num1 = input()
+ print("Enter Second Number")
+ num2 = input()
+ print("************************************")
+ print("Sum of Given numbers is : "+str(int(num1)+int(num2)))
+ print("Difference of Given numbers is : "+str(int(num1)-int(num2)))
+ print("Product of Given numbers is : "+str(int(num1)*int(num2)))
+ print("Division of Given numbers is : "+str(int(num1)/int(num2)))
+ print("************************************")
+
+OUTPUT:
+ Enter First Number 
+20 
+Enter Second Number 
+20
+ Result: 
+Sum of Given numbers is: 40 
+Difference of Given numbers is: 0 
+Product of Given numbers is: 400 
+Division of Given numbers is: 1.0 
+“Sum of Given numbers is: 40”
+
+# A Program to calculate number of words and characters of a given string
+ print("Enter a sentence ")
+sentence = input()
+words = sentence.split()
+ word_count = 0
+ character_count = 0
+ for word in words:
+ word_count += 1
+ character_count += len(word)
+ print("Total Numbers of Words in the sentence are : ",word_count)
+print("Total Numbers of characters in the sentence excluding spaces are :”,character_count)
+print("Total Numbers of characters in the sentence including spaces are : ",character_count+word_count-1)
+
+OUTPUT
+
+ Result: 
+Total Numbers of Words in the sentence are: 7 
+Total Numbers of characters in the sentence excluding spaces are: 22 
+Total Numbers of characters in the sentence including spaces are: 28
+
+# A Program to get Area of a selected shape.
+37 while True:
+print("*****************************************")
+ print("Select the Shape that you want to calculate Area")
+ print("""
+ 1. Rectangle
+ 2. Triangle
+ 3. Circle
+ 4. Exit """)
+choice = input()
+
+
+if(choice == '1'):
+ print("Enter the Width of the Rectangle in meters")
+ width = int(input())
+ print("Enter the height of the Rectangle in meters")
+ height = int(input())
+ print("The area of a Given Rectangle is ", width*height , " square meters ")
+continue
+ elif(choice == '2'):
+ print("Enter the Base value of the Triangle in meters")
+ base = int(input())
+ print("Enter the height of the Triangle in meters")
+ height = int(input())
+ print("The area of a Given Rectangle is ", 0.5*base*height , " square60 meters ")
+ continue
+ elif(choice == '3'):
+ print("Enter the Radius of the Circle in meters")
+ radius = int(input())
+ print("The area of a Given Circle is ", 3.14*radius*radius , " square 66 meters ")
+ continue
+ elif(choice == '4'):
+ break
+ else:
+ print("Please enter a valid number from the menu")
+ continue
+print("")
+
+OUTPUT:
+
+ Select the Shape that you want to calculate Area 
+1. Rectangle 
+2. Triangle 
+3. Circle 
+4. Exit 
+(we have chosen option 1 that is rectangle) 
+Enter the Width of the Rectangle in meters 
+5 
+Enter the height of the Rectangle in meters 
+33 
+Result: 
+The area of a Given Rectangle is 165 square meters
+
+# A Program to print a name n times where name and n values has to be input from
+standard input
+print("Enter Your name : ")
+name = input()
+print("Enter How many times you want to print your name")
+n = int(input())
+ for i in range(n):
+ print(name)
+print("")
+
+OUTPUT
+Enter your name: 
+ALS 
+Enter How many times you want to print your name 
+2 
+Result: 
+ALS 
+ALS
+
+
+
+
+
+# A Program to Handle Divide By Zero Exception
+ print("Enter Numerator Value : ")
+ num1 = int(input())
+ print("Enter Denominator value : ")
+ num2 = int(input())
+ try:
+ result = num1/num2
+ print("The Division of Given Numbers is : ", result)
+ except ZeroDivisionError:
+ print("Divide By zero Error. The Denominator should not be Zero")
+ print("")
+
+OUTPUT
+Enter Numerator Value: 
+5 
+Enter Denominator value: 
+0 
+Result: 
+Divide By zero Error. The Denominator should not be Zero
+
+
+# A Program to print current time with an interval of 10 seconds
+import time
+ for i in range(10):
+ seconds = time.time()
+
+local_time = time.ctime(seconds)
+ print("Local time:", local_time)
+ time.sleep(10)
+print("")
+
+OUTPUT
+
+Time and date will be displayed on the screen with a delay of 10 seconds 
+Local time: Fri Apr 30 22:43:00 2021 
+Local time: Fri Apr 30 22:43:10 2021 
+Local time: Fri Apr 30 22:43:20 2021 
+Local time: Fri Apr 30 22:43:30 2021 
+Local time: Fri Apr 30 22:43:40 2021 
+Local time: Fri Apr 30 22:43:50 2021 
+Local time: Fri Apr 30 22:44:00 2021 
+Local time: Fri Apr 30 22:44:10 2021 
+Local time: Fri Apr 30 22:44:20 2021 
+Local time: Fri Apr 30 22:44:30 2021
+
+
+
+
+
+# A Program to Read a file and print No of Words in each Line
+file1 = open('myfile.txt', 'r')
+Lines = file1.readlines()
+ i=0
+ for line in Lines:
+ i += 1
+count = len(line.split())
+ print("Line ", i, "No of Words ", count)
+print("")
+
+OUTPUT
+Result: 
+Line 1 No of Words 6 
+Line 2 No of Words 9 
+Line 3 No of Words 6 
+Line 4 No of Words 5
